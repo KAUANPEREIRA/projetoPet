@@ -22,7 +22,7 @@ server.use(mainRoutes)
 //rota de erro
 
 server.use((req, res)=>{
-    res.send('Pagina não encontrada')
+    res.render('pages/404')
 })
 
 

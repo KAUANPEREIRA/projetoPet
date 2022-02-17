@@ -10,9 +10,12 @@ const router = Router()
 
 router.get('/',pageController.home)//rota para home criada no pageController
 
-router.get('/dogs',pageController.dogs)
-router.get('/cats',pageController.cats)
-router.get('/fishes',pageController.fishes)
-router.get('/search',searchController.search)
+router.get('/dogs',pageController.dogs)//rotaa criada para pagina de cachorros
+
+router.get('/cats',pageController.cats)//rota criada para pagina de gatos
+
+router.get('/fishes',pageController.fishes)//rota criada oara pagina de peixes
+
+router.get('/search',searchController.search)//rota criada para input de busca
 
 export default router

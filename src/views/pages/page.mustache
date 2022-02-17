@@ -1,0 +1,29 @@
+
+{{>partials/header}}
+
+{{#banner}}<!--- esse codigoustache e verificação para exivir banner ou não--->
+<section class="banner" style="background-image: url('images/{{background}}')">{{title}}</section>
+<h2>{{title}} disponíveis para adoção</h2>
+{{/banner}}
+
+<div class="container list">
+    {{#list}}
+        <div class="item">
+            <img src="images/{{image}}" class="item--image" />
+            <div class="item--name">{{name}}</div>
+            <div class="item--color">{{color}}</div>
+            <div class="item--genre">{{sex}}</div>
+        </div>
+    {{/list}}
+</div>
+<!--- condicional para quando não existir nada em list condicional com mustache--->
+{{^list}}
+
+<div class="container no-list">
+    <h2>Animal não encontrado</h2>
+</div>
+
+
+
+{{/list}}
+{{>partials/footer}}
