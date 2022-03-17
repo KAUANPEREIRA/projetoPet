@@ -1,3 +1,4 @@
+//models sã criados para armazenar as funções do projeto
 //funções de model
 //pegar todos os pets
 //filtar os pets por tipo
